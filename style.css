@@ -1,0 +1,137 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.container{
+
+display: grid;
+ grid-template-columns:repeat(3,1fr); 
+ gap: 1rem;
+ position: absolute;
+ top: 70%;
+ transform: translate(0,-40%);
+ margin-left: 2%;
+ margin-right: 2%;
+}
+
+.item{
+background-color: aqua;
+width:100%;
+border-radius: 20px;
+}
+.item2{
+
+grid-column-start: 4;
+grid-column-end: 2;
+
+}
+.item5{
+grid-column-start: 4;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 4;
+height: 100%;
+}
+.item3{
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 3;
+grid-row-end: 4;
+
+}
+.item4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  
+}
+.item6{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end: 3;
+    
+}
+
+.posts,.followers,.following{
+
+width: 6.25rem;
+min-height: 4.188rem;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #B5BAB6;
+opacity: 0.6;
+}
+span{
+    font-weight: 600;
+    columns: #4E5150;
+    font-size: 20px;
+    
+}
+.posts p:nth-child(2),.followers p:nth-child(2),.following p:nth-child(2){
+font-weight: 600;
+font-size: 17px;
+opacity: 0.4;
+
+}
+
+.social-media{
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+ 
+}
+.profile{
+
+    width: 7.5rem;
+    border-radius: 20px;
+}
+.me{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7.5px;
+}
+.me p:nth-child(2){
+font-size: 20px;
+font-weight: 600;
+}
+.me p:nth-child(3){
+
+    font-size: 17px;
+font-weight: 500;
+opacity: 0.5;
+}
+@media only screen and (min-width:1024px) {
+    .container{
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);
+       position: absolute;
+ margin-top: -20%;
+    }
+}
+@media only screen and (min-width:768px) {
+
+.container{
+    top: 97%;
+}
+
+
+}
